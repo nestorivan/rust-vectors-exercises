@@ -163,3 +163,33 @@ fn main() {
         println!("{} got {}!", student.name, student.grade);
     }
 }
+
+// use std::collections::HashMap;
+
+// fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+//     // we create a hashmap to keep track of the visited elements and its indexes
+//     let mut checked_numbers = HashMap::new();
+
+//     // we use iter to convert nums vector into an iterator
+//     // we use enumarate to access its value along with the index we are currently at
+//     for (index, num) in nums.iter().enumerate() {
+//         // we substract the current number to our target
+//         // the result is the needed number
+//         let needed_element = target - num;
+
+//         // we check our hashmap to check if the needed_element has been stored
+//         if checked_numbers.contains_key(&needed_element) {
+//             // if found we get the value from our hashmap, which is the index of the stored element
+//             // and add the index of the element we are iterating currently
+//             return vec![checked_numbers[&needed_element], index as i32];
+//         }
+
+//         // if not found we store the number we currently at as the key
+//         // alongside its index
+//         checked_numbers.insert(num, index as i32);
+//     }
+
+//     return Vec::new();
+// }
+
+// fn main() {}
